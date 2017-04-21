@@ -39,17 +39,11 @@
 /****************************/
 /* Local Definitions        */
 /****************************/
-/* Task priorities */
-#define PRINT_A_TASK_PRIORITY       ( tskIDLE_PRIORITY + 1 )
-#define PRINT_B_TASK_PRIORITY       ( tskIDLE_PRIORITY + 2 )
 
 /****************************/
 /* Local Functions          */
 /****************************/
 static void Init(void);
-
-static void PrintATask( void* pvParameters );
-static void PrintBTask( void* pvParameters );
 
 /****************************/
 /* Local Variables          */
@@ -90,9 +84,6 @@ static void Init(void)
 
 int main(void)
 {
-    uint32_t counter = 0;
-    void* dontCareParams = NULL;
-
     Init();
 
     /****************** FreeRTOS tasks init ******************/

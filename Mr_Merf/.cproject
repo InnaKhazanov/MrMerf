@@ -41,8 +41,8 @@
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_16.9.compilerID.LITTLE_ENDIAN.1280990533" name="Little endian code [See 'General' page to edit] (--little_endian, -me)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_16.9.compilerID.LITTLE_ENDIAN" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_16.9.compilerID.INCLUDE_PATH.1570507132" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_16.9.compilerID.INCLUDE_PATH" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;D:\eclipse\workspace\Mr_Merf\Drivers&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;D:\eclipse\workspace\Mr_Merf\OSTasks&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/OSTasks&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Drivers&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/FreeRTOS/Source/portable/CCS/ARM_CM4F&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/FreeRTOS/Source/include&quot;"/>
