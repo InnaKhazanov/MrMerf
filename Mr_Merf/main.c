@@ -88,8 +88,6 @@ static void Init(void)
 
 
 
-//SemaphoreHandle_t xSemaphore = NULL;
-
 int main(void)
 {
     uint32_t counter = 0;
@@ -102,20 +100,7 @@ int main(void)
     xTaskCreate( MotorTask, "MTR", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
     xTaskCreate( ContollerLogicTask, "CNTR", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
 
+    /****************** FreeRTOS tasks run ******************/
     vTaskStartScheduler();
-
-
-#if 0
-    while(1)
-    {
-        TimerDelayMiliSec(60);
-        //UARTprintf("%d, Im alive!\n", counter);
-        //counter++;
-
-        UltasonicSensorTask( dontCareParams );
-        ContollerLogicTask( dontCareParams );
-        MotorTask( dontCareParams );
-    }
-#endif
 }
 
