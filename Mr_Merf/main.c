@@ -8,18 +8,12 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-// Driver lib include files
-#include "inc/hw_memmap.h"
-#include "inc/hw_ints.h"
-#include "driverlib/pin_map.h"
+// Driverlib include files
 #include "driverlib/sysctl.h"
-#include "driverlib/gpio.h"
 #include "driverlib/interrupt.h"
 #include "driverlib/systick.h"
-#include "driverlib/pwm.h"
 
 // Local drivers and utilities
-#include "Drivers/UART/uartstdio.h"
 #include "Drivers/UART/UARTInit.h"
 #include "Drivers/Ultrasonic/Ultrasonic.h"
 #include "UtilFunctions/UtilFunctions.h"
@@ -29,9 +23,8 @@
 // FreeRTOS include files
 #include "FreeRTOS.h"
 #include "task.h"
-#include "semphr.h"
 
-// OS Tasks includes
+// Tasks includes
 #include "OSTasks/UltrasonicTask/UltrasonicTask.h"
 #include "OSTasks/MotorTask/MotorTask.h"
 #include "OSTasks/ControllerTask/ControllerTask.h"
@@ -48,7 +41,6 @@ static void Init(void);
 /****************************/
 /* Local Variables          */
 /****************************/
-
 
 /****************************/
 /* Function Implementation  */
